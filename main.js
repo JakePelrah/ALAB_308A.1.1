@@ -1,16 +1,14 @@
 //////////////////////// Part 1 ////////////////////////
 
 let counter = 0;
-function stackOverflow(){
+function stackOverflow() {
     counter++
     return stackOverflow()
 };
 
-try{
+try {
     stackOverflow()
-}catch{
+} catch {
     console.log(`${counter} call completed before stack overflow.`)
 }
-
-
 
